@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { CSGO, CSGOGSI, CSGORaw, Score } from "csgogsi";
+import { CSGOGSI, CSGORaw, Score } from "csgogsi";
 import { io } from "../sockets/socket.js";
 import {
   getCoaches,

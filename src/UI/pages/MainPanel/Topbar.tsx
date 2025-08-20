@@ -7,8 +7,8 @@ interface TopBarProps {
   header: string;
   buttonText?: string;
   openForm?: (open: boolean) => void;
-  layout: "card" | "table";
-  setLayout: (layout: "card" | "table") => void;
+  layout?: "card" | "table";
+  setLayout?: (layout: "card" | "table") => void;
 }
 
 export const Topbar = ({
@@ -49,7 +49,7 @@ export const Topbar = ({
           )}
         </div>
         <div className="flex items-center justify-center gap-4">
-          {location.pathname === "/players" &&
+          {location.pathname === "/players" && setLayout &&
             (layout == "card" ? (
               <MdOutlineTableRows
                 onClick={() => setLayout("table")}

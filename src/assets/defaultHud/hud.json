@@ -1,0 +1,13 @@
+{
+  "name": "OpenHud CS:GO Legacy Default HUD",
+  "version": "1.0.2",
+  "author": "John Timmermann",
+  "legacy": true,
+  "radar": true,
+  "killfeed": false,
+  "game": "csgo",
+  "boltobserv": {
+    "css": false,
+    "maps": false
+  }
+}
